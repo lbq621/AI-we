@@ -2,7 +2,7 @@
 
 ### Issue tracker
 
-Issues live as local markdown files under `.scratch/<feature-slug>/`. External PRs are not a triage surface (no git remote). See `docs/agents/issue-tracker.md`.
+Issues live as GitHub Issues on `lbq621/AI-we`. Use the `gh` CLI for all operations. External PRs are not a triage surface. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 
