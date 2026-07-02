@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "skills": {
+    "ppt-generator-skill": {
+      "name": "ppt-generator-skill",
+      "zip_url": "https://api.skillhub.cn/api/v1/download?slug=ppt-generator-skill",
+      "source": "community",
+      "version": "1.0.2",
+      "installedAt": "2026-06-18T08:26:37Z"
+    },
+    "poster": {
+      "name": "海报设计skill",
+      "zip_url": "https://api.skillhub.cn/api/v1/download?slug=poster",
+      "source": "community",
+      "version": "1.0.0",
+      "installedAt": "2026-06-18T08:30:52Z"
+    }
+  }
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯球星卡通形象</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .stars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .star-card {
+            background: linear-gradient(145deg, #2a2a4a 0%, #1a1a3a 100%);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 2px solid #ffd700;
+        }
+        .star-card:hover {
+            transform: translateY(-10px);
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        .star-name {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .star-country {
+            color: #ffd700;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .star-position {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        .star-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ffd700;
+            color: #1a1a2e;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ 世界杯球星卡通形象 ⚽</h1>
+        <div class="stars-grid">
+            <!-- 梅西 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#f4c7a3"/>
+                        <!-- 头发 -->
+                        <path d="M 30 60 Q 40 20 75 25 Q 110 20 120 60 Q 110 40 75 35 Q 40 40 30 60" fill="#2c1810"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="95" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#2c1810" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#2c1810" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 100 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#75b8ff"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">10</text>
+                    </svg>
+                    <div class="star-number">10</div>
+                </div>
+                <h3 class="star-name">梅西</h3>
+                <p class="star-country">🇦🇷 阿根廷</p>
+                <p class="star-position">前锋</p>
+            </div>
+
+            <!-- C罗 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#e8b88a"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 35 25 75 30 Q 115 25 120 55 Q 115 35 75 40 Q 35 35 30 55" fill="#1a1a1a"/>
+                        <path d="M 30 55 Q 25 70 30 80" stroke="#1a1a1a" stroke-width="8" fill="none"/>
+                        <path d="M 120 55 Q 125 70 120 80" stroke="#1a1a1a" stroke-width="8" fill="none"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="95" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 55 Q 55 50 65 55" stroke="#1a1a1a" stroke-width="4" fill="none"/>
+                        <path d="M 85 55 Q 95 50 105 55" stroke="#1a1a1a" stroke-width="4" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#e74c3c"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">7</text>
+                    </svg>
+                    <div class="star-number">7</div>
+                </div>
+                <h3 class="star-name">C罗</h3>
+                <p class="star-country">🇵🇹 葡萄牙</p>
+                <p class="star-position">前锋</p>
+            </div>
+
+            <!-- 姆巴佩 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#8d5524"/>
+                        <!-- 头发 -->
+                        <path d="M 30 50 Q 40 15 75 20 Q 110 15 120 50 Q 110 30 75 25 Q 40 30 30 50" fill="#1a1a1a"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="95" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 100 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#2c3e50"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">10</text>
+                    </svg>
+                    <div class="star-number">10</div>
+                </div>
+                <h3 class="star-name">姆巴佩</h3>
+                <p class="star-country">🇫🇷 法国</p>
+                <p class="star-position">前锋</p>
+            </div>
+
+            <!-- 内马尔 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#c68642"/>
+                        <!-- 头发 -->
+                        <path d="M 30 50 Q 35 15 75 20 Q 115 15 120 50 Q 115 25 75 30 Q 35 25 30 50" fill="#1a1a1a"/>
+                        <path d="M 40 35 Q 50 10 60 35" stroke="#1a1a1a" stroke-width="5" fill="none"/>
+                        <path d="M 60 30 Q 70 5 80 30" stroke="#1a1a1a" stroke-width="5" fill="none"/>
+                        <path d="M 80 35 Q 90 10 100 35" stroke="#1a1a1a" stroke-width="5" fill="none"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="95" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 100 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#f1c40f"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">10</text>
+                    </svg>
+                    <div class="star-number">10</div>
+                </div>
+                <h3 class="star-name">内马尔</h3>
+                <p class="star-country">🇧🇷 巴西</p>
+                <p class="star-position">前锋</p>
+            </div>
+
+            <!-- 莫德里奇 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#f4c7a3"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 40 20 75 25 Q 110 20 120 55 Q 110 35 75 30 Q 40 35 30 55" fill="#c0a060"/>
+                        <path d="M 35 55 Q 30 80 40 90" stroke="#c0a060" stroke-width="10" fill="none"/>
+                        <path d="M 115 55 Q 120 80 110 90" stroke="#c0a060" stroke-width="10" fill="none"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="95" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#c0a060" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#c0a060" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#e74c3c"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">10</text>
+                    </svg>
+                    <div class="star-number">10</div>
+                </div>
+                <h3 class="star-name">莫德里奇</h3>
+                <p class="star-country">🇭🇷 克罗地亚</p>
+                <p class="star-position">中场</p>
+            </div>
+
+            <!-- 德布劳内 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#f4c7a3"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 40 20 75 25 Q 110 20 120 55 Q 110 35 75 30 Q 40 35 30 55" fill="#c0a060"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="95" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 55 Q 55 50 65 55" stroke="#c0a060" stroke-width="4" fill="none"/>
+                        <path d="M 85 55 Q 95 50 105 55" stroke="#c0a060" stroke-width="4" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#f39c12"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">17</text>
+                    </svg>
+                    <div class="star-number">17</div>
+                </div>
+                <h3 class="star-name">德布劳内</h3>
+                <p class="star-country">🇧🇪 比利时</p>
+                <p class="star-position">中场</p>
+            </div>
+
+            <!-- 维尼修斯 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#8d5524"/>
+                        <!-- 头发 -->
+                        <path d="M 30 50 Q 35 15 75 20 Q 115 15 120 50 Q 115 25 75 30 Q 35 25 30 50" fill="#1a1a1a"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="95" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 100 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#fff"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">7</text>
+                    </svg>
+                    <div class="star-number">7</div>
+                </div>
+                <h3 class="star-name">维尼修斯</h3>
+                <p class="star-country">🇧🇷 巴西</p>
+                <p class="star-position">前锋</p>
+            </div>
+
+            <!-- 贝林厄姆 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#e8b88a"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 40 20 75 25 Q 110 20 120 55 Q 110 35 75 30 Q 40 35 30 55" fill="#1a1a1a"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="95" cy="70" r="8" fill="#1a1a1a"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 55 Q 55 50 65 55" stroke="#1a1a1a" stroke-width="4" fill="none"/>
+                        <path d="M 85 55 Q 95 50 105 55" stroke="#1a1a1a" stroke-width="4" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#fff"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">5</text>
+                    </svg>
+                    <div class="star-number">5</div>
+                </div>
+                <h3 class="star-name">贝林厄姆</h3>
+                <p class="star-country">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</p>
+                <p class="star-position">中场</p>
+            </div>
+
+            <!-- 克罗斯 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#f4c7a3"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 40 20 75 25 Q 110 20 120 55 Q 110 35 75 30 Q 40 35 30 55" fill="#2c1810"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="95" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 55 Q 55 50 65 55" stroke="#2c1810" stroke-width="4" fill="none"/>
+                        <path d="M 85 55 Q 95 50 105 55" stroke="#2c1810" stroke-width="4" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#2c3e50"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">8</text>
+                    </svg>
+                    <div class="star-number">8</div>
+                </div>
+                <h3 class="star-name">克罗斯</h3>
+                <p class="star-country">🇩🇪 德国</p>
+                <p class="star-position">中场</p>
+            </div>
+
+            <!-- 佩德里 -->
+            <div class="star-card">
+                <div class="avatar">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 脸部 -->
+                        <circle cx="75" cy="75" r="60" fill="#e8b88a"/>
+                        <!-- 头发 -->
+                        <path d="M 30 55 Q 40 20 75 25 Q 110 20 120 55 Q 110 35 75 30 Q 40 35 30 55" fill="#2c1810"/>
+                        <!-- 眼睛 -->
+                        <circle cx="55" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="95" cy="70" r="8" fill="#2c1810"/>
+                        <circle cx="57" cy="68" r="3" fill="#fff"/>
+                        <circle cx="97" cy="68" r="3" fill="#fff"/>
+                        <!-- 眉毛 -->
+                        <path d="M 45 58 Q 55 52 65 58" stroke="#2c1810" stroke-width="3" fill="none"/>
+                        <path d="M 85 58 Q 95 52 105 58" stroke="#2c1810" stroke-width="3" fill="none"/>
+                        <!-- 嘴巴 -->
+                        <path d="M 60 90 Q 75 95 90 90" stroke="#c0392b" stroke-width="3" fill="none"/>
+                        <!-- 球衣 -->
+                        <rect x="45" y="120" width="60" height="30" rx="5" fill="#e74c3c"/>
+                        <text x="75" y="142" text-anchor="middle" fill="#ffd700" font-size="14" font-weight="bold">26</text>
+                    </svg>
+                    <div class="star-number">26</div>
+                </div>
+                <h3 class="star-name">佩德里</h3>
+                <p class="star-country">🇪🇸 西班牙</p>
+                <p class="star-position">中场</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
